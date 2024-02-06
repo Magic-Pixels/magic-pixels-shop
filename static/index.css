@@ -1,0 +1,22 @@
+header {
+    height: calc(100dvh - 56px);
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-xxl {
+    font-size: 5rem;
+    width: 22rem;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+button {
+}
