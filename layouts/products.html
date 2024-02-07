@@ -1,0 +1,20 @@
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="filters.js"></script>
+
+<div id="product-grid">
+    {{ range .Site.RegularPages }}
+        {{ if in .Params.categories "t-shirts" }}
+            <div class="product t-shirts">
+                <h2>{{ .Title }}</h2>
+                <img src="{{ .Params.image }}" loading="lazy" alt="{{ .Title }}">
+                <!-- Add additional product details here -->
+            </div>
+        {{ else if in .Params.categories "stickers" }}
+            <div class="product stickers">
+                <h2>{{ .Title }}</h2>
+                <img src="{{ .Params.image }}" loading="lazy" alt="{{ .Title }}">
+                <!-- Add additional product details here -->
+            </div>
+        {{ end }}
+    {{ end }}
+</div>
